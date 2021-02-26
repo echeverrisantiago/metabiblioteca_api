@@ -22,6 +22,10 @@ nav.items-center svg{
     margin-bottom: 0rem;
 }
 
+.hidden{
+    display: none;
+}
+
 .main-button{
     background: indianred;
 color: white;

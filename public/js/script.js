@@ -23,19 +23,19 @@ console.log(data);
     .then(res => res.json())
     .then( function(data){
         if(data){
-            window.location.replace('/');
+            window.location.replace('/books');
     }
     });
     });
 
     /* Evento listar muestras */
     $('#addSamples').click(function(){
+        $('#SamplesMessage').removeClass('hidden');
         fetch(document.location.origin+'/addSamples')
         .then(res => res.json())
         .then( function(data){
             if(data){
-                 console.log(data);
-                $('#addSamples').append(data);
+                window.location.replace('/books');
             }
         });
     });
@@ -54,7 +54,7 @@ console.log(data);
     if(data == 1){
     bookCont.remove();
     if($('.book-wrapper').length < 1){
-        window.location.replace('/');
+        window.location.replace('/books');
     }
 }
 })

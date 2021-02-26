@@ -22,6 +22,9 @@
                                     <button class="btn btn-info m-2" style="color:white;">Añadir libro</button>
                                 </a>
                             </div>
+                            <div class="alert alert-primary hidden" role="alert" id="SamplesMessage">Este proceso puede tardar varios segundos,
+                                        una vez finalizado se recargará la página.
+</div>
                         </div>
                 </div>
                 @else
