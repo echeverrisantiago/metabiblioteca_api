@@ -1,0 +1,36 @@
+
+.cover-book{
+    max-width: 200px;
+}
+
+nav.items-center{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+nav.items-center .flex-1{
+    display: none;
+}
+
+nav.items-center svg{
+    max-width: 2rem;
+}
+
+.main-title{
+    color: indianred;
+    margin-bottom: 0rem;
+}
+
+.main-button{
+    background: indianred;
+color: white;
+border: none;
+font-size: 2rem;
+padding: .5rem 2rem;
+border-radius: 2rem;
+}
+
+.main-title span{
+    color: #bbb;
+}
