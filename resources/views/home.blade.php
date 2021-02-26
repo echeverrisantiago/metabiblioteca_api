@@ -24,7 +24,7 @@
                             </div>
                             <div class="alert alert-primary hidden" role="alert" id="SamplesMessage">Este proceso puede tardar varios segundos,
                                         una vez finalizado se recargará la página.
-</div>
+                                    </div>
                         </div>
                 </div>
                 @else

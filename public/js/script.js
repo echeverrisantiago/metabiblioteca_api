@@ -35,7 +35,7 @@ console.log(data);
         .then(res => res.json())
         .then( function(data){
             if(data){
-                window.location.replace('/books');
+                window.location.replace('/books');//
             }
         });
     });
