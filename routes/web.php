@@ -12,17 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'BooksController@welcome');
 
-Route::post('/book', 'BooksController@store');
-Route::get('/books', 'BooksController@index');
-Route::get('/book/{id}', 'BooksController@getbook');
-Route::get('/bookInfo/{id}', 'BooksController@getbookInfo');
-Route::delete('/book/{id}', 'BooksController@delete');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('libro/{id}','BooksController@getBook');
-Route::get('addBook','BooksController@addBook');
-Route::get('addSamples','BooksController@addSamples');
+Route::post('/books/create/{id}', 'BooksController@store');
+Route::get('/books/', 'BooksController@index');
+Route::get('/books/{id}', 'BooksController@getbook');
+Route::post('/books/delete/{id}', 'BooksController@delete');

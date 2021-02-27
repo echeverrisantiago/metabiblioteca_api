@@ -11,7 +11,8 @@ class Books extends Model
     protected $table = 'books';
     protected $fillable =
     [
+        'isbn',
         'title',
-        'cover'
+        'cover',
     ];
 }
